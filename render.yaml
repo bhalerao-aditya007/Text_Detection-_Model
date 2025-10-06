@@ -7,3 +7,6 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.12
+build:
+  environment:
+    pythonVersion: 3.12.7
