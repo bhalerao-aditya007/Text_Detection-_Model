@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: hate-speech-detector
+    env: python
+    buildCommand: "pip install -r requirements.txt --no-cache-dir"
+    startCommand: "uvicorn main:app --host=0.0.0.0 --port=$PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12
